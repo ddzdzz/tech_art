@@ -3,15 +3,15 @@
 // Pushing button will toggle LED on/off
 // ------------------------------------------------------------
 
-#define led_pin 13
-#define button_pin 12
+const int led_pin = 7;   
+const int button_pin = 2; 
 
 bool isLedOn = false;
 int prevButtonState = HIGH; // prevents led toggling if button was held down
 
 void setup() {
   pinMode(button_pin, INPUT_PULLUP); // use internal pull-up for button, reverses button state
-  pinMode(13, OUTPUT);
+  pinMode(led_pin, OUTPUT);
 }
 
 void loop() {
