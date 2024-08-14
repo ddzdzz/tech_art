@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project</title>
+        <meta name="description" content="The design process of a tech art sculpture.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <h1>Final Project</h2>
+        <p>
+            This project was completely open ended, which made it challenging to come up with a concept. We spent 
+            many classes brainstorming themes that would make for cool tech sculptures, or interesting mechanisms 
+            that could lend itself to a theme. Finally, we settled on a topic - secrets. Why do people share 
+            or keep secrets? How does technology change the way we perceive secrecy?
+        </p>
+        <figure>
+            <img src="Assets/fp_brainstorm_concept.png" alt="bullet points of concept ideas for sculpture">
+            <figcaption>One of many brainstorming/sketching sessions</figcaption>
+        </figure>
+
+        <h2>Concept Design</h2>
+        <p>
+            Our original design was a ballot box that would take in people’s written secrets and eject one, 
+            stemming from my and Bennett’s interest in building something with a rotating mechanism. However after 
+            consulting our professors, we realized that the form and interaction of our sculpture didn't
+            perfectly align with the theme. When picturing the act of sharing a secret, a scene of a person 
+            whispering into the ear of another likely comes to mind. Thus we revised our design to a rotating 
+            mouth and ear sculpture. 
+        </p>
+        <p>
+            When viewers walk up to our sculpture, they are invited to share a secret with the strange ear. Then 
+            the sculpture would rotate to reveal a mouth that recounts a secret shared by a previous viewer. For the 
+            design of the mouth and ear soft sculptures, Bonnie drew inspiration from Pop Art. This not only makes 
+            the sculpture visually captivating, but modernizes it to suit the theme of exploration of secret sharing 
+            in current society.
+        </p>
+
+        <h2>Technical Design</h2>
+        <p>
+            Bennett and I worked closely to integrate the mechanical and electronic components of the sculpture. 
+            The main challenge was the rotating sculpture, which needed to spin 180° back and forth. In the default 
+            position the rotating component would lay flush with a box that hides the other side of the sculpture, 
+            so accuracy was important. We considered a few options for the motor:
+        </p>
+        <ul>
+            <li>Servo motor</li>
+            <li>Step motor</li>
+            <li>Motor + limit switches</li>
+            <li>Motor encoder</li>
+        </ul>
+        <p>Ultimately we picked the motor and limit switch option which felt the most reliable. The sculpture could 
+            be rotated to any angle during building and troubleshooting, so the limit switches ensure that the 
+            sculpture can always return to the default position.
+        </p>
+        <figure>
+            <img src="Assets/fp_brainstorm_motor.png" alt="sketch of motor rotating the sculpture">
+            <figcaption>Sketch of design.</figcaption>
+        </figure>
+        <p>There was also a discussion about how to record people's secrets. If we wanted to be the most unsuspecting,
+            we could have the mic record when the volume surpasses a certain threshold while a proximity sensor validates 
+            the presence of a person standing in front of the sculpture. But how can we distinguish between a secret and 
+            people talking in front of the sculpture? Noise level in the gallery can also fluctuate, so there were too many 
+            unknowns overall for this to work well. Instead, we decided to remove all ambiguity by guiding the audience to 
+            press a button before whipering into the ear. This doesn't detract from the purpose of the sculpture as the 
+            audience still doesn't know what will happen next. Furthermore, it presents a choice between walking 
+            away and putting something out there to satisfy their curiosity.
+        </p>
+        <p>
+            With sensors and motors picked out, we planned out the dimensions of the sculpture, the location and size 
+            of mounting holes and got to work - Bonnie on the ear/mouth sculpture, Bennett on the mechanical parts and 
+            me on electronics. As part of the project deliverable we have put together an "installation manual" 
+            detailing the entire build process, which can be found in the repo along with all 3D models and code.
+        </p>
+        <figure>
+            <img src="Assets/fp_wip.png" alt="Work in progress pictures of sculpture">
+            <figcaption>Some work in progress pictures!</figcaption>
+        </figure>
+
+        <h2>Final Result</h2>
+        <p>
+            <i>I Eat Babies</i>, 2023
+            <br>
+            <b>Materials</b>
+            <br>
+            MDF, acrylic paint, fabric, gardening wires, cotton string, Arduino, speaker, button, LED, motor, limit 
+            switches, microphone, PLA
+            <br>
+            <b>Artist Stement (Shortened)</b>
+            <br>
+            <i>I Eat Babies</i> is a sculptural piece that began as an exploration of human intimacy through communication 
+            and storytelling — particularly the sharing of secrets. Through vulnerable exchanges of information, we 
+            entrust bits of pieces of ourselves with the world around us. Whether it is to bond or to manipulate, 
+            information becomes an intangible tool that humans have come to construct. In modern society, information 
+            sharing has never been so accessible. Can we trust technology to keep our secrets? Or are we incentivised 
+            to overshare? Thus, <i>I Eat Babies</i> seeks to investigate how each of us interacts with technology and how we 
+            react to the information shared with us. 
+            <br>
+            At first glance, <i>I Eat Babies</i> depicts a rather abstract soft sculpture ear resting on the gallery wall. 
+            This personified being presents itself as a trustworthy entity, inviting the audience to whisper into 
+            its ear. Unknowingly, an audio recording will be saved. Afterwards, the sculpture turns 180° revealing 
+            the backside, featuring a pair of animated red lips with a green tongue. It delivers an automated 
+            “Thank You for sharing” message and shares a previous recording of a secret outloud to the viewer — 
+            possibly even the viewer’s own secret. The reveal of the mouth challenges the viewer to think about 
+            where they place their trust, as things are not always as they seem. Reminiscent of the Pop Art Movement, 
+            the colours and material of the soft sculptures play with the idea of modernity, pop culture, and the 
+            fabrication of truth and meaning.
+        </p>
+
+    </body>
+</html>
