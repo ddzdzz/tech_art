@@ -1,0 +1,41 @@
+body {
+    padding-top: 25px;
+}
+
+#bp_wip img, #fp_wip img{
+    max-width: 250px;
+    margin: auto;
+}
+
+#bp_gallery img{
+    max-width: 500px;
+    margin: auto;
+}
+
+#fp_gallery img, #fp_gallery video{
+    height: 450px;
+    margin: auto;
+}
+
+#fp_gallery video{
+    padding: 10%;
+}
+
+#fp_gallery .carousel-control-prev, #fp_gallery .carousel-control-next{
+    width: 10%;
+    margin:2%;
+}
+
+.scrollable {
+    overflow: auto;
+    height: 300px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
