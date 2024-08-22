@@ -1,2 +1,2 @@
-# Tech Art Final Project
-Contains resource files used to construct the art piece.
+# Tech Art Projects
+Two Tech Art sculptures made in a joint engineering/fine arts elective. Learn more about the class and projects on the [project page](https://ddzdzz.github.io/tech_art/index.html)!
